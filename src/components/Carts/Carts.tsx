@@ -8,6 +8,7 @@ interface Props {
 }
 
 const Carts:React.FC<Props> = ({carts}) => {
+    console.log('Cart state:', carts);
     return (
         <div>
             <h4 className="text-center">Blog</h4>

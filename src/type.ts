@@ -1,8 +1,7 @@
 export interface Blog {
     id:string;
-    time:string;
-    title:string;
-    text:string;
+    title: string;
+    text: string;
 }
 
 export interface Post {
