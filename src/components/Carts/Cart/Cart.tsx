@@ -4,7 +4,6 @@ import {Blog} from "../../../type.ts";
 
 interface Props {
     cart:Blog;
-
 }
 
 const Cart:React.FC<Props> = ({cart}) => {

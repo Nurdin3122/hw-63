@@ -7,6 +7,8 @@ import { useEffect, useState} from "react";
 import {Blog} from "./type.ts";
 import Add from "./container/Add/Add.tsx";
 import axiosApi from "./axiosApi.ts";
+import About from "./container/About/About.tsx";
+import Contacts from "./container/Contacts/Contacts.tsx";
 
 const App = () => {
     const [cart, setCart] = useState<Blog[]>([]);
@@ -39,6 +41,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Home carts={cart}/>}/>
             <Route path="/add" element={<Add blog={cart}/>}/>
+            <Route path="/about" element={<About/>}></Route>
         </Routes>
       </main>
     </>
